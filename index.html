@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500" rel="stylesheet">
+    <link href="./bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <script>
+        function showThankYouPage() {
+            window.location.href = "thankyou.html";
+        }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="row">
+            <div class="col-6 text-start">
+                <img src="./image/HP Rectangle.png" alt="" class="img-fluid hp">
+            </div>                
+            <div class="col-6 text-end">
+                <img src="./image/Delivering happiness logo.png" alt="" class="img-fluid happy">
+            </div>
+            <div class="col-12 col-md-12">
+                <span class="mt-2">TANK full kijiye, e-CASH lijiye</span>
+            </div>
+        </div>
+    </header>
+    <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <img src="./5 ltr.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12">
+                        <div class="pumpname align-middle">
+                            Petrol Pump Name
+                        </div>
+                    </div>
+                </div>
+                <section>
+                    <div class="row">
+                        <div class="col-12">
+                            <form action="submit-form.php" method="POST" onsubmit="showThankYouPage()">
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-4">
+                                      <label for="name" class="col-form-label">Name</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="name" name="name" placeholder="Enter Your Name" class="form-control" required>
+                                    </div>
+                                </div>                                
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-4">
+                                      <label for="Amount" class="col-form-label">Amount*</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="Amount" id="Amount" name="Amount" placeholder="Enter Amount" class="form-control" required>
+                                    </div>
+                                </div>                                
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-4">
+                                      <label for="phone" class="col-form-label">Phone No.*</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="phone" name="phone" placeholder="+91" class="form-control" required>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-4 offset-4">
+                                        <button class="btn btn-sm button" type="submit">Submit</button>
+                                    </div>
+                                </div>                                 
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <h5 class="vdate">Campaign Valid Till 31<sup>st</sup> July 2023</h5>
+                        <span class="dt">26 May 2023 | 17:59:56</span>
+                    </div>
+                </section>
+            </div>
+        
+        </main>
+
+        <footer class="footer">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="./termsAndcondition.html " class="tc">Terms and conditions Apply</a>
+                </div>
+                <div class="copyright">All Copyrights Reserved</div>
+            </div>
+        </footer>
+        
+</body>
+
+</html>
